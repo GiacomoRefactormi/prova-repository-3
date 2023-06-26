@@ -4,6 +4,7 @@
     "description": "Share UI components",
     "sideEffects": false,
     "scripts": {},
-    "dependencies": {},
-    "devDependencies": {}
-  }
+    "dependencies": {
+        "react": "^18.2.0"
+    }
+}
