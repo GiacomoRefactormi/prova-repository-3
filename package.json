@@ -1,5 +1,6 @@
 {
-	"devDependencies": {
-		"nx": "^16.4.0"
-	}
+  "devDependencies": {
+    "nx": "16.4.0",
+    "nx-cloud": "latest"
+  }
 }

@@ -9,8 +9,11 @@ importers:
   .:
     devDependencies:
       nx:
-        specifier: ^16.4.0
+        specifier: 16.4.0
         version: 16.4.0
+      nx-cloud:
+        specifier: latest
+        version: 16.0.5
 
   apps/my-remix-app:
     dependencies:
@@ -1757,6 +1760,14 @@ packages:
       json-parse-even-better-errors: 2.3.1
     dev: true
 
+  /@nrwl/nx-cloud@16.0.5:
+    resolution: {integrity: sha512-1p82ym8WE9ziejwgPslstn19iV/VkHfHfKr/5YOnfCHQS+NxUf92ogcYhHXtqWLblVZ9Zs4W4pkSXK4e04wCmQ==}
+    dependencies:
+      nx-cloud: 16.0.5
+    transitivePeerDependencies:
+      - debug
+    dev: true
+
   /@nrwl/tao@16.4.0:
     resolution: {integrity: sha512-6n4chOOv6jqact07NvIDRQfsnaiYYhi+mrqSuJKs6fL+c5kx/VCryndTP0MDTBbazfL6H7vwiQUkTja2sQDuwA==}
     hasBin: true
@@ -2700,6 +2711,16 @@ packages:
   /axe-core@4.7.2:
     resolution: {integrity: sha512-zIURGIS1E1Q4pcrMjp+nnEh+16G56eG/MUllJH8yEvw7asDo7Ac9uhC9KIH5jzpITueEZolfYglnCGIuSBz39g==}
     engines: {node: '>=4'}
+    dev: true
+
+  /axios@1.1.3:
+    resolution: {integrity: sha512-00tXVRwKx/FZr/IDVFt4C+f9FYairX517WoGCL6dpOntqLkZofjhu43F/Xl44UOpqa+9sLFDrG/XAnFsUYgkDA==}
+    dependencies:
+      follow-redirects: 1.15.2
+      form-data: 4.0.0
+      proxy-from-env: 1.1.0
+    transitivePeerDependencies:
+      - debug
     dev: true
 
   /axios@1.4.0:
@@ -4501,7 +4522,7 @@ packages:
       '@types/glob': 7.2.0
       array-union: 2.1.0
       dir-glob: 3.0.1
-      fast-glob: 3.2.11
+      fast-glob: 3.2.12
       glob: 7.2.3
       ignore: 5.2.4
       merge2: 1.4.1
@@ -5948,6 +5969,10 @@ packages:
     hasBin: true
     dev: true
 
+  /node-machine-id@1.1.12:
+    resolution: {integrity: sha512-QNABxbrPa3qEIfrE6GOJ7BYIuignnJw7iQ2YPbc3Nla1HzRJjXzZOiikfF8m7eAMfichLt3M4VgLOetqgDmgGQ==}
+    dev: true
+
   /node-releases@2.0.12:
     resolution: {integrity: sha512-QzsYKWhXTWx8h1kIvqfnC++o0pEmpRQA/aenALsL2F4pqNVr7YzcdMlDij5WBnwftRbJCNJL/O7zdKaxKPHqgQ==}
     dev: true
@@ -5974,6 +5999,24 @@ packages:
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       path-key: 4.0.0
+    dev: true
+
+  /nx-cloud@16.0.5:
+    resolution: {integrity: sha512-13P7r0aKikjBtmdZrNorwXzVPeVIV4MLEwqGY+DEG6doLBtI5KqEQk/d5B5l2dCF2BEi/LXEmLYCmf9gwbOJ+Q==}
+    hasBin: true
+    dependencies:
+      '@nrwl/nx-cloud': 16.0.5
+      axios: 1.1.3
+      chalk: 4.1.2
+      dotenv: 10.0.0
+      fs-extra: 11.1.1
+      node-machine-id: 1.1.12
+      open: 8.4.2
+      strip-json-comments: 3.1.1
+      tar: 6.1.11
+      yargs-parser: 21.1.1
+    transitivePeerDependencies:
+      - debug
     dev: true
 
   /nx@16.4.0:
@@ -7284,6 +7327,18 @@ packages:
       fs-constants: 1.0.0
       inherits: 2.0.4
       readable-stream: 3.6.2
+    dev: true
+
+  /tar@6.1.11:
+    resolution: {integrity: sha512-an/KZQzQUkZCkuoAA64hM92X0Urb6VpRhAFllDzz44U2mcD5scmT3zBc4VgVpkugF580+DQn8eAFSyoQt0tznA==}
+    engines: {node: '>= 10'}
+    dependencies:
+      chownr: 2.0.0
+      fs-minipass: 2.1.0
+      minipass: 3.3.6
+      minizlib: 2.1.2
+      mkdirp: 1.0.4
+      yallist: 4.0.0
     dev: true
 
   /tar@6.1.15:
