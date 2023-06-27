@@ -4,6 +4,9 @@
     "description": "Share UI components",
     "sideEffects": false,
     "scripts": {},
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
     "dependencies": {
         "react": "^18.2.0"
     },
