@@ -1,3 +1,0 @@
-Questo è un file testo ti test
-
-questo è il merge che ho fatto dall'editor
