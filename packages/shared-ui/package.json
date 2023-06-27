@@ -2,8 +2,11 @@
     "name": "shared-ui",
     "private": true,
     "description": "Share UI components",
+    "main": "dist/index.js",
     "sideEffects": false,
-    "scripts": {},
+    "scripts": {
+        "build": "rm -rf dist && tsc"
+    },
     "keywords": [],
     "author": "",
     "license": "MIT",
